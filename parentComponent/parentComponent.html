@@ -1,0 +1,13 @@
+<template>
+    
+    <c-childcomponent name='Vinnu' age='30'>
+
+    </c-childcomponent>
+    <div class='childBorder'>
+    <template if:true={con.length} for:each={con} for:item='cont' for:index=index>
+        <c-child-with-conditional-for-loop key={cont.id} urname={cont.name} age={cont.age}> <br>
+    
+        </c-child-with-conditional-for-loop>
+    </template>
+    </div>
+</template>

@@ -1,0 +1,75 @@
+<template>
+    <lightning-card   title="Full CAlculator" icon-name="standard:account">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Calc Expression" value={entireinput} ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Result"   value={resultvalue} ></lightning-input>
+        </div>
+        
+        <table class="slds-table_bordered">
+            <tr class="slds-line-height_reset">
+              <td scope="col">
+               <div >
+                <lightning-button variant="brand-outline" label="1" value=1 onclick={handleclick}></lightning-button>
+               </div>
+              </td> 
+              <td scope="col">
+                  <div>
+                    <lightning-button variant="brand-outline" label="2" onclick={handleclick}></lightning-button>
+              </div>
+              </td> 
+              <td scope="col">
+               <div><lightning-button variant="brand-outline" label="3" onclick={handleclick}></lightning-button></div> 
+              </td> 
+              <td scope="col">
+               <div> <lightning-button variant="brand" label="+" onclick={handleclick}></lightning-button></div>
+              </td> 
+            </tr>
+            <tr>
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="4" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="5" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="6" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand" label="−" onclick={handleclick}></lightning-button>
+                </td> 
+              </tr>
+              <tr>
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="7" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="8" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="9" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand" label="*" onclick={handleclick}></lightning-button>
+                </td> 
+              </tr>
+              <tr>
+                <td scope="col">
+                  <lightning-button label="CLR" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand-outline" label="0" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="success" label="=" onclick={handleclick}></lightning-button>
+                </td> 
+                <td scope="col">
+                  <lightning-button variant="brand" label="/" onclick={handleclick}></lightning-button>
+                </td> 
+              </tr>
+       
+            
+        </table>
+    </lightning-card>
+</template>
